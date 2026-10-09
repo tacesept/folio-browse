@@ -89,7 +89,6 @@ function App() {
             <AlphabetNav
               grouped={grouped}
               onJump={jumpTo}
-              onShowAll={showAll}
             />
           ) : (
             <button
