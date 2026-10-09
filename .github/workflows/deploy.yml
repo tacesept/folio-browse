@@ -31,6 +31,13 @@ jobs:
       - name: Build project
         run: pnpm run build
 
+      - name: Verify build output
+        run: |
+          echo "=== index.html ==="
+          cat dist/index.html
+          echo "=== Assets ==="
+          find dist -maxdepth 2 -type f
+
       - name: Upload production-ready build files
         uses: actions/upload-artifact@v7
         with:
