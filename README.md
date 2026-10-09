@@ -1,16 +1,55 @@
-# React + Vite
+# Folio Browse
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Folio Browse is a lightweight React app for discovering developer portfolios. It gives you a curated archive of portfolios, searchable by name or tagline, with quick alphabet navigation and a randomizer for browsing inspiration.
 
-Currently, two official plugins are available:
+## Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+This project was built to make portfolio discovery easier and more enjoyable. Instead of manually searching through scattered links, you can quickly browse a central library of developer portfolio sites, filter by keyword, and jump to relevant sections alphabetically.
 
-## React Compiler
+The app loads portfolio data from the public developer portfolio feed and presents it in a clean, fast interface.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Features
 
-## Expanding the ESLint configuration
+- Browse a curated archive of developer portfolios
+- Search portfolios by name or tagline
+- Jump between sections using alphabet navigation
+- Generate a random set of portfolios for inspiration
+- Responsive, minimal interface optimized for quick exploration
+- Client-side data fetching with caching for a smoother browsing experience
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Tech Stack
+
+- React 19
+- Vite
+- Tailwind CSS
+- TanStack React Query
+- ESLint
+
+## Project Structure
+
+```text
+.
+├── public/
+├── src/
+│   ├── components/
+│   ├── hooks/
+│   ├── App.jsx
+│   ├── main.jsx
+│   └── index.css
+├── eslint.config.js
+├── index.html
+├── package.json
+├── vite.config.js
+└── README.md
+```
+
+## Data Source
+
+Portfolio data is pulled from the public feed used by the developer portfolio archive project:
+
+https://github.com/emmabostian/developer-portfolios
+
+
+## Notes
+
+This app is intentionally simple and focused on exploration. It does not require a backend and is designed to be easy to run locally for inspiration, research, or further customization.
